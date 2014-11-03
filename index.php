@@ -1,6 +1,6 @@
 <?php
 	$titolo = "Catalogo";
-	require_once "./lib/session.php"
+	require_once "./lib/session.php";
 ?>
 <!DOCTYPE html>
 <html lang="es_ES">

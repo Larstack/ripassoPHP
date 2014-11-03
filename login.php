@@ -10,8 +10,7 @@
 			session_start();
 			$_SESSION["login"] = "auth";
 			header("refresh:1;url=catalogo.php");
-		}			
-		else{
-			header("location:index.php?error=1");
+			exit;
 		}
 	}
+	header("location:./?error=1");

@@ -18,21 +18,21 @@
 		<h1><?php echo $titolo; ?></h1>
 	</header>
 	<div class="categorias">
-		<table>
-			<tr>
-				<td>Categorias</td>
-			</tr>
+		<h2>Categorias</h2>
+		<ul>
 <?php
 	foreach($categorias as $row){
 ?>
-		<tr>
-			<td><a href="productos.php?cat_id=<?php echo $row["cat_id"]; ?>"><?php echo $row["cat_nombre"]; ?></a></td>
-		</tr>
-
+		<li>
+			<a href="productos.php?cat_id=<?php echo $row["cat_id"]; ?>"><?php echo $row["cat_nombre"]; ?></a>
+		</li>
 <?php
 	}
 ?>
-		</table>
+			<li>
+				<a href="productos.php">Todos los productos</a>
+			</li>
+		</ul>
 	</div>
 </body>
 </html>

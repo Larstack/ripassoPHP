@@ -25,12 +25,17 @@
 		}
 		public function getProductos(){
 			if(func_num_args()>0){
-				$sql = "SELECT prd_nombre, prd_descripcion, prd_precio FROM productos
+				$sql = "SELECT prd_id, prd_nombre, prd_descripcion, prd_precio FROM productos
 					WHERE cat_id=".func_get_arg(0);	
 			}
 			else{
-				$sql = "SELECT prd_nombre, prd_descripcion, prd_precio FROM productos";
+				$sql = "SELECT prd_id, prd_nombre, prd_descripcion, prd_precio FROM productos";
 			}			
+			return $this->query($sql);
+		}
+		public function getProductoById($prd_id){
+			$sql = "SELECT prd_nombre, prd_descripcion, prd_precio FROM productos
+				WHERE prd_id=$prd_id";
 			return $this->query($sql);
 		}
 	}
