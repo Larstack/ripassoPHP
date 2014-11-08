@@ -1,0 +1,56 @@
+body{
+	font-family: "Arial";
+}
+h1{
+	display: none;
+}
+fieldset{
+	border: none;
+}
+.login{
+	border: 4px #005ea0 solid;
+	width: 300px;
+	position: relative;
+	margin: 150px auto;
+}
+.login label{
+	display: block;
+	width: 150px;
+	position: relative;
+	margin: 10px auto;
+	margin-bottom: 2px;
+	color: #848484;
+}
+.login input{
+	position: relative;
+	display: block;
+	width: 150px;
+	margin: 5px auto;
+}
+
+.login #bottone{
+	position: relative;
+	display: block;
+	margin: 20px auto;
+	width: 80px;
+	background-color: #a00000;
+	color: #fff;
+	border-radius: 8px;
+	border: none;
+}
+.login #bottone:hover{
+	background-color: #c11111;
+}
+.error{
+	width: 304px;
+	height: 35px;
+	position: relative;
+	margin: -150px auto;
+	padding: 3px;
+}
+.error p{
+	width: 168px;
+	margin: 10px auto;
+	color: #a00000;
+	font-weight: bold;
+}
