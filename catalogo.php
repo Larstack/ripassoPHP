@@ -38,7 +38,18 @@
 		foreach($_SESSION["carrito"] as $key=>$value){
 ?>
 			<li>
-				<p><?php print_r($catalogo->getProductoById($key)[0]["prd_nombre"]); ?></p>
+				<a id="rm" href="
+				<?php 
+					if(isset($_GET['cat_id'])){
+						echo './lib/rm_car.php?prd_id='.$key.'&cat_id='.$_GET['cat_id'];
+					}else{
+						echo './lib/rm_car.php?prd_id='.$key;
+					}
+				?>">
+					<img title="Logout" alt="Logout" src="./img/borrar2.png" width="10px" height="10px" />
+				</a>
+				<p class="prd"><?php echo $catalogo->getProductoById($key)[0]["prd_nombre"]; ?></p>
+				<p class="qta"><?php echo $value; ?></p>
 			</li>
 <?php
 		}

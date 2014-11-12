@@ -19,7 +19,7 @@ header{
 	text-decoration: none;
 }
 .menu a{
-	color: #a00000;
+	color: #545454;
 	font-weight: bold;
 }
 .menu li{
@@ -52,6 +52,17 @@ header{
 }
 .carrito h3{
 	color: #a00000;
+}
+#rm{
+	text-decoration: none;
+}
+.prd{
+	display: inline-block;
+	width: 270px;
+}
+.qta{
+	display: inline-block;
+	font-weight: bold;
 }
 .productos li{
 	margin: 12px auto;
